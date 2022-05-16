@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open_Board</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- main body starts here -->
+    <div class="mainBody">
+      <!-- first item of main body=>[menuButton] -->
+      <div class="menuButton">
+        <!-- span copid from google-fonts-items -->
+        <span class="material-icons-outlined">menu</span>
+      </div>
+      <!-- second item of main body=>[toolHeader] -->
+      <div class="toolHeader" style="display: none">
+        <!-- adding item icons from google-fonts-icons -->
+        <!-- pen -->
+        <span class="material-icons-outlined pen">create</span>
+        <!-- eraser -->
+        <span class="material-icons-outlined eraser">bento</span>
+        <!-- sticky note -->
+        <span class="material-icons-outlined stickyNote">sticky_note_2</span>
+        <!-- image -->
+        <span class="material-icons-outlined uploadSticky">image</span>
+        <!-- download -->
+        <span class="material-icons-outlined Download">file_download</span>
+        <!-- upload -->
+        <!-- <span class="material-icons-outlined">file_upload</span> -->
+        <!-- undo -->
+        <span class="material-icons-outlined undo">undo</span>
+        <!-- redo -->
+        <span class="material-icons-outlined redo">redo</span>
+      </div>
+
+      <!-- pen-tool functionality -->
+      <div class="penTool" style="display: none;">
+          <!-- input range of pen -->
+          <div class="input-pen">
+              <input type="range" min="2" to max="10" value="4" class="pen-width">
+          </div>
+          <!-- color options for pen -->
+          <div class="color-options">
+              <div class="Red pen-color"></div>
+              <div class="Black pen-color"></div>
+              <div class="Blue pen-color"></div>
+          </div>
+      </div>
+
+      <!-- Eraser Functionality -->
+      <div class="eraserTool" style="display: none;">
+          <input type="range" min="2" to max="30" value="4" class="eraser-width">
+      </div>
+
+      <!-- sticky notes cont -->
+      <!-- <div class="sticky-cont">
+        <div class="header-cont">
+          <div class="minimize"></div>
+          <div class="remove"></div>
+        </div>
+        <div class="note-cont">
+          <textarea></textarea>
+        </div>
+      </div> -->    
+      <canvas></canvas>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./canvas.js"></script>
+  </body>
+</html>
+
+
